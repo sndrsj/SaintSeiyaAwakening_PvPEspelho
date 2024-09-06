@@ -15,12 +15,6 @@ keyboard.add_hotkey('q', parar_Script)
 
 def trocar_janela():
     try:
-        vscode_window = gw.getWindowsWithTitle('Visual Studio Code')[0]
-        vscode_window.minimize()
-    except:
-        print('Nao foi encontrado o vscode')
-
-    try:
         emulator_window = gw.getWindowsWithTitle('Emulador GTarcade')[0]
         emulator_window.activate()
         print(f"Focado na janela do emulador: {'Emulador GTarcade'}.")
